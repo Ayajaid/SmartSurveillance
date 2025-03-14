@@ -1,0 +1,11 @@
+/* AlertNotification.css */
+.alert-notification {
+    padding: 10px;
+    background-color: #ffcccc;
+    border: 1px solid #ff0000;
+    margin-bottom: 10px;
+}
+
+.alert-notification button {
+    margin-left: 10px;
+}

@@ -7,8 +7,8 @@ import './Dashboard.css';
 function Dashboard() {
     const cameraUrl = '/surveillance.mp4';// Vidéo avec autoplay
     const alerts = [
-        { type: 'Intrusion', location: 'Hall A', time: '10:15' },
-        { type: 'Objet abandonné', location: 'Couloir B', time: '10:30' },
+        { type: 'Intrusion', location: 'Bloc A', time: '10:15' },
+        { type: 'Objet abandonné', location: 'Hall', time: '10:30' },
     ];
 
     return (
@@ -20,7 +20,7 @@ function Dashboard() {
                     <CameraFeed cameraUrl={cameraUrl} />
                 </div>
                 <div className="dashboard-section">
-                    <h2>Alertes récentes</h2>
+                    <h2> </h2>
                     <AlertList alerts={alerts} />
                 </div>
                 <div className="dashboard-section">

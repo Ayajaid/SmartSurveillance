@@ -1,51 +1,54 @@
-/* ReportGenerator.css */
 .report-generator {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
 }
 
 .report-generator h3 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #2c3e50;
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
 }
 
 .filters {
     display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .filter-group {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .filter-group label {
-    margin-bottom: 5px;
-    font-size: 0.9rem;
+    font-size: 14px;
     color: #555;
 }
 
-.filter-group input,
-.filter-group select {
+.filter-input {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
-.report-generator button {
+.generate-button {
+    margin-top: 20px;
     padding: 10px 20px;
-    background-color: #1abc9c;
-    color: white;
+    background-color: #007bff;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
 }
 
-.report-generator button:hover {
-    background-color: #16a085;
+.generate-button:hover {
+    background-color: #0056b3;
 }

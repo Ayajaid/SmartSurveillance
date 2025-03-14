@@ -20,8 +20,12 @@ function App() {
         }
     };
 
+    const handleLogout = () => {
+        setIsLoggedIn(false);
+    };
+
     return (
-        <AuthContext.Provider value={{ login: handleLogin }}>
+        <AuthContext.Provider value={{ login: handleLogin, logout: handleLogout }}>
             <Router>
                 <div className="App">
                     {!isLoggedIn ? (

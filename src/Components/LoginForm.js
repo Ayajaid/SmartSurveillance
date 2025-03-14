@@ -15,10 +15,10 @@ function LoginForm() {
     return (
         <div className="login-container">
             <div className="login-box">
-                <h2>LOGIN</h2>
+                <h2>Se Connecter</h2>
                 <form className="login-form" onSubmit={handleSubmit}>
                     <div className="input-group">
-                        <label htmlFor="username">USERNAME</label>
+                        <label htmlFor="username">Utilisateur</label>
                         <input
                             type="text"
                             id="username"
@@ -28,7 +28,7 @@ function LoginForm() {
                         />
                     </div>
                     <div className="input-group">
-                        <label htmlFor="password">PASSWORD</label>
+                        <label htmlFor="password">Mot de passe</label>
                         <input
                             type="password"
                             id="password"
@@ -43,14 +43,13 @@ function LoginForm() {
                             <label htmlFor="remember-me">Remember me</label>
                         </div>
                         <a href="#forgot-password" className="forgot-password">
-                            Forgot your password?
+                            Mot de passe oublié?
                         </a>
                     </div>
                     <button type="submit" className="login-button">
-                        LOGIN
+                       Se connecter
                     </button>
                 </form>
-                <p className="design-credit">Designed by Freepik</p>
             </div>
         </div>
     );

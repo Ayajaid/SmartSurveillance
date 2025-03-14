@@ -13,9 +13,11 @@ function ReportManager() {
       endDate,
       incidentType,
       incidents: [
-        { type: 'Intrusion', count: 5 },
-        { type: 'Objet abandonné', count: 3 },
-        { type: 'Incendie', count: 2 },
+        { type: 'Incendie', count: 5 },
+        { type: 'Accidents', count: 3 },
+        { type: 'Non éthique', count: 2 },
+        { type: 'Vol', count: 4 },
+        { type: 'Violence', count: 1 },
       ],
     };
     setReport(generatedReport);

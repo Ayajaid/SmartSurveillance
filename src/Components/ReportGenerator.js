@@ -20,6 +20,7 @@ function ReportGenerator({ onGenerate }) {
                         type="date"
                         value={startDate}
                         onChange={(e) => setStartDate(e.target.value)}
+                        className="filter-input"
                     />
                 </div>
                 <div className="filter-group">
@@ -28,6 +29,7 @@ function ReportGenerator({ onGenerate }) {
                         type="date"
                         value={endDate}
                         onChange={(e) => setEndDate(e.target.value)}
+                        className="filter-input"
                     />
                 </div>
                 <div className="filter-group">
@@ -35,15 +37,18 @@ function ReportGenerator({ onGenerate }) {
                     <select
                         value={incidentType}
                         onChange={(e) => setIncidentType(e.target.value)}
+                        className="filter-input"
                     >
                         <option value="">Tous</option>
-                        <option value="Intrusion">Intrusion</option>
-                        <option value="Objet abandonné">Objet abandonné</option>
                         <option value="Incendie">Incendie</option>
+                        <option value="Accidents">Accidents</option>
+                        <option value="Non éthique">Non éthique</option>
+                        <option value="Vol">Vol</option>
+                        <option value="Violence">Violence</option>
                     </select>
                 </div>
             </div>
-            <button onClick={handleGenerate}>Générer</button>
+            <button className="generate-button" onClick={handleGenerate}>Générer</button>
         </div>
     );
 }
